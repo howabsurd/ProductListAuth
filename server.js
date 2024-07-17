@@ -20,7 +20,7 @@ const corsOptions = {
 };
 
 app.get("/", (req,res)=>{
-    res.status(200).json("vercel Deploy")
+    res.status(200).json("vercel Deploy2")
 })
 
 app.use(cors(corsOptions));
