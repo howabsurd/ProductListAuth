@@ -19,6 +19,10 @@ const corsOptions = {
   }
 };
 
+app.get("/", (req,res)=>{
+    res.status(200).json("vercel Deploy")
+})
+
 app.use(cors(corsOptions));
 
 app.use(express.json());
