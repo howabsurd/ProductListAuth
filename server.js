@@ -45,11 +45,6 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
     console.log(err);
   });
 
-// Basic route
-app.get("/", (req, res) => {
-  res.status(200).json("Server is running");
-});
-
 // Start the server
 app.listen(process.env.PORT, () => {
   console.log(`App is listening on port ${process.env.PORT}`);
